@@ -2,37 +2,80 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  position: sticky;
+  top: 0;
+  background: #a3e6b6;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  font-family: 'Lobster', cursive;
+}
+nav a, nav a:visited{
+     color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  background: #FFCFCF;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.episode {
+  
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 5%;
+  padding: 1rem;
+  background-color: #e6a3a3;
+  border-radius: 20px;
+  box-shadow: 4px 4px 2px #993f3f;
+  position: relative;
+
 }
 
-.App-link {
-  color: #61dafb;
+.episode:hover {
+  box-shadow: 6px 6px 3px #993f3f;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.episode h1 {
+  
+  color: #993f3f;
+}
+
+.episode .always_show {
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.episode img{
+  height: 300px;
+  margin: 1rem 0;
+  border: 2px solid #993f3f;
+}
+
+.episode h1{
+
+  font-size: 2em
+
+}
+
+.hide_away {
+  
 }
