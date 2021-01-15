@@ -10,7 +10,9 @@ function About() {
 
       <strong>About The Podcast:</strong> Rescue Dog Moms is a typical pandemic project that started as an obsession with dogs and grew into an obsession of  “talking about dogs”. This podcast is a dog parenting podcast, for those who love the four-legged friends that they rescued - because they got rescued right back. Each week, we bring on a dog mom to talk about their dogs and how they changed their lives. Most of these are my friends, with some Instagram stalking incorporated as well.
       </p>
-      <img src={YamandBoss} alt="Podcast creator and her fur baby" />
+      <div>
+        <img src={YamandBoss} alt="Podcast creator and her fur baby" />
+      </div>
       <p>
         <strong>About Yamini:</strong> Yamini is a public relations professional and a rescue dog mom. She spends her free time volunteering and fostering with various Toronto dog rescues, including Fetch + Releash and New Collar Collective. She loves reality TV, the Internet (especially TikTok right now) and eating delicious food. Sometimes she shares it with Boss.<br/><br/>
 

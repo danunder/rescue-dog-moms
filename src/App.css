@@ -126,6 +126,11 @@ flex-direction: column;
 
 }
 
+.about img {
+
+  width: 100%;
+}
+
 .about li {
 
   list-style: none;
