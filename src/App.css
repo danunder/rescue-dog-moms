@@ -1,49 +1,77 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFCFCF;
 }
 
 nav {
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   background: #a3e6b6;
   color: black;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  height: 300px;
+  
+  width: 100%;
   font-family: 'Lobster', cursive;
 }
 nav a, nav a:visited{
      color: black;
+     text-decoration: none;
+}
+
+nav a:hover {
+
+  text-decoration: underline;
 }
 
 .nav-links {
-  width: 50%;
+  
   display: flex;
+  
   justify-content: space-around;
   align-items: center;
   list-style: none;
+
+}
+
+.nav-links li {
+
+  margin: 1.5rem;
+  font-size: 2.5rem;
+  
+
+}
+
+nav img {
+  max-height: 25vh;
 }
 
 .container {
   background: #FFCFCF;
   display: flex;
   flex-direction: column;
+  width: 95vw;
+  max-width: 1000px;
   
 }
 
 .episode {
   
-  width: 90%;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5%;
+  margin: 3% 0;
   padding: 1rem;
   background-color: #e6a3a3;
   border-radius: 20px;
   box-shadow: 4px 4px 2px #993f3f;
-  position: relative;
+ 
 
 }
 
@@ -55,6 +83,8 @@ nav a, nav a:visited{
 .episode h1 {
   
   color: #993f3f;
+  word-wrap: normal;
+  max-width: 500px;
 }
 
 .episode .always_show {
@@ -62,11 +92,13 @@ nav a, nav a:visited{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .episode img{
-  height: 300px;
-  margin: 1rem 0;
+  height: 30vh;
+  margin: 1rem 2rem;
   border: 2px solid #993f3f;
 }
 
@@ -77,5 +109,28 @@ nav a, nav a:visited{
 }
 
 .hide_away {
-  
+  max-width: 800px
+}
+
+.hide_away p {
+
+  text-align: left
+}
+
+.about {
+max-width: 800px;
+margin: 2rem;
+
+}
+
+.about li {
+
+  list-style: none;
+
+}
+
+.icons img {
+
+  height: 2rem;
+  margin: 0 0 2rem 2rem;
 }

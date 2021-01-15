@@ -38,12 +38,9 @@ function Episodes() {
                 </audio>
               </div>
             </div>
-            {selected === episode.id && (
-              <div class="hide_away">
-                <aside></aside>
-                
-                <div dangerouslySetInnerHTML={episode.description}></div>
-              </div> )}
+            {selected === episode.id && (                           
+                <div class="hide_away" dangerouslySetInnerHTML={episode.description}></div>
+            )}
           </article> 
         )
       })}
