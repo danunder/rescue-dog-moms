@@ -18,11 +18,11 @@ function About() {
 
       <strong>Want to adopt or foster in the GTA?</strong> It is important you do your research on which rescue you do that through. Check out these RDM approved rescues:</p>
       <ul>
-        <li><a href="https://www.fetchandreleash.ca/">Fetch + Releash</a></li>
-        <li><a href="https://newcollar.co/">New Collar Collective</a></li>
-        <li><a href="https://www.straytoplay.org/">Stray to Play</a></li>
+        <li><a href="https://www.fetchandreleash.ca/" rel="noreferrer" target="_blank">Fetch + Releash</a></li>
+        <li><a href="https://newcollar.co/" rel="noreferrer" target="_blank">New Collar Collective</a></li>
+        <li><a href="https://www.straytoplay.org/" rel="noreferrer" target="_blank">Stray to Play</a></li>
       </ul>
-      <p>Want to contact us? DM us on Instagram (<a href="https://www.instagram.com/rescuedogmomspod/">@rescuedogmomspodcast</a>) or email me @ <a href="mailto:rescuedogmoms@gmail.com">rescuedogmoms@gmail.com</a></p>
+      <p>Want to contact us? DM us on Instagram (<a href="https://www.instagram.com/rescuedogmomspod/" rel="noreferrer" target="_blank">@rescuedogmomspodcast</a>) or email me @ <a href="mailto:rescuedogmoms@gmail.com" rel="noreferrer" target="_blank">rescuedogmoms@gmail.com</a></p>
 
 
     </div>
