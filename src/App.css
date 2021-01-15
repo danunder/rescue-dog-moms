@@ -33,8 +33,8 @@ nav a:hover {
 .nav-links {
   
   display: flex;
-  
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
 
@@ -42,7 +42,7 @@ nav a:hover {
 
 .nav-links li {
 
-  margin: 1.5rem;
+  margin: 0 1rem 0 1rem;
   font-size: 2.5rem;
   
 
@@ -137,8 +137,12 @@ flex-direction: column;
 
 }
 
+.icons {
+  margin: 0 0 0 2rem;
+}
+
 .icons img {
 
   height: 2rem;
-  margin: 0 0 2rem 2rem;
+  margin: 0 1rem 1rem 1rem;
 }
