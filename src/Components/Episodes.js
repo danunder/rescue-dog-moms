@@ -19,7 +19,6 @@ function Episodes() {
       }
     })
     const unparsedEpisodes = await data.json()
-    console.log(unparsedEpisodes)
     setEpisodes(parseEpisodes(unparsedEpisodes))  
   }
   
@@ -39,7 +38,7 @@ function Episodes() {
               </div>
             </div>
             {selected === episode.id && (                           
-                <div class="hide_away" dangerouslySetInnerHTML={episode.description}></div>
+                <div className="hide_away" dangerouslySetInnerHTML={episode.description}></div>
             )}
           </article> 
         )

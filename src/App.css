@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #FFCFCF;
+  background: #ffcfcf;
   height: 100%;
 }
 
@@ -13,57 +13,53 @@ nav {
   background: #a3e6b6;
   color: black;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
+
   width: 100%;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
 }
-nav a, nav a:visited{
-     color: black;
-     text-decoration: none;
+nav a,
+nav a:visited {
+  color: black;
+  
 }
 
 nav a:hover {
-
   text-decoration: underline;
 }
 
 .nav-links {
-  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   list-style: none;
-
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
-
-  margin: 0 1rem 0 1rem;
-  font-size: 2.5rem;
-  
-
+  margin: 1rem 3rem;
+  font-size: 3rem;
 }
 
 nav img {
   max-height: 25vh;
+  margin: 1rem;
 }
 
 .container {
-  background: #FFCFCF;
+  background: #ffcfcf;
   display: flex;
   flex-direction: column;
   width: 95vw;
   max-width: 1000px;
-  
 }
 
 .episode {
-  
- 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,24 +68,19 @@ nav img {
   background-color: #e6a3a3;
   border-radius: 20px;
   box-shadow: 4px 4px 2px #993f3f;
- 
-
 }
 
 .episode:hover {
   box-shadow: 6px 6px 3px #993f3f;
-
 }
 
 .episode h1 {
-  
   color: #993f3f;
   word-wrap: normal;
   max-width: 500px;
 }
 
 .episode .always_show {
-  
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -97,52 +88,44 @@ nav img {
   flex-wrap: wrap;
 }
 
-.episode img{
+.episode img {
   height: 30vh;
   margin: 1rem 2rem;
   border: 2px solid #993f3f;
 }
 
-.episode h1{
-
-  font-size: 2em
-
+.episode h1 {
+  font-size: 2em;
 }
 
 .hide_away {
-  max-width: 800px
+  max-width: 800px;
 }
 
 .hide_away p {
-
-  text-align: left
+  text-align: left;
 }
 
 .about {
-max-width: 800px;
-margin: 2rem;
-display: flex;
-flex-direction: column;
-
+  max-width: 800px;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .about img {
-
   width: 100%;
 }
 
 .about li {
-
   list-style: none;
-
 }
 
 .icons {
-  margin: 0 0 0 2rem;
+  
 }
 
 .icons img {
-
-  height: 2rem;
-  margin: 0 1rem 1rem 1rem;
+  height: 2.5rem;
+  margin: 2rem;
 }
