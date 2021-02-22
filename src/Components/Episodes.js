@@ -15,6 +15,7 @@ function Episodes() {
   const fetchEpisodes = async () => {
     const data = await fetch('https://www.buzzsprout.com/api/1544806/episodes.json', {
       headers: {
+        'Access-Control-Allow-Origin': '*',
         'Authorization':'Token token=6e72fd1f22bbb78e9ca9875fa08970e4'
       }
     })
