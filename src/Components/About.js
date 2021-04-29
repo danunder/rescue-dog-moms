@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import YamandBoss from '../Images/yamandboss2.jpeg'
+import YamandBoss from '../Images/yamandboss3.jpeg'
 
 function About() {
   return (
