@@ -10,7 +10,6 @@ function Episodes() {
   }, [])
 
   const [episodes, setEpisodes] = useState([]);
-  const [selected, setSelected] = useState('')
 
   const fetchEpisodes = async () => {
     const data = await fetch('https://www.buzzsprout.com/api/1544806/episodes.json', {
@@ -19,28 +18,36 @@ function Episodes() {
       }
     })
     const unparsedEpisodes = await data.json()
-    setEpisodes(parseEpisodes(unparsedEpisodes))  
+    setEpisodes(parseEpisodes(unparsedEpisodes))
   }
-  
+  const [selected, setSelected] = useState('')
+
   return (
       <div className="container">
-      {episodes.map(episode => {
+      {episodes.map(({
+        id,
+        artwork_url,
+        title,
+        published_at,
+        audio_url,
+        description
+      }) => {
         return (
-          <article className="media episode" key={episode.id} onClick={ () => setSelected(episode.id)}>
+          <article className="media episode" key={id} onClick={ () => setSelected(id)}>
             <div className="always_show">
-              <img src={episode.artwork_url} alt="Episode Artwork" />
+              <img src={artwork_url} alt="Episode Artwork" />
               <div>
-                <h1>{episode.title}</h1>
-                <h3>{episode.published_at}</h3>
+                <h1>{title}</h1>
+                <h3>{published_at}</h3>
                 <audio controls>
-                  <source src={episode.audio_url} type="audio/mpeg" />
+                  <source src={audio_url} type="audio/mpeg" />
                 </audio>
               </div>
             </div>
-            {selected === episode.id && (                           
-                <div className="hide_away" dangerouslySetInnerHTML={episode.description}></div>
+            {selected === id && (
+                <div className="hide_away" dangerouslySetInnerHTML={description}></div>
             )}
-          </article> 
+          </article>
         )
       })}
     </div>

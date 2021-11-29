@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import { Link } from 'react-router-dom';
-import Banner from '../Images/banner.png'
+import Banner from '../Images/RDM-logo.png'
 import Instagram from '../Images/6-60185_instagram-logo-png-black.png'
 import Spotify from '../Images/Spotify_Icon_RGB_Black.png'
 import Apple from '../Images/Apple_Podcast_Icon.png'
@@ -19,6 +19,9 @@ function Nav() {
           <Link to="/about">
             <li>About</li>
           </Link>
+          <a href="https://www.shophotdiggity.com/shop" target='blank'>
+            <li>Shop</li>
+          </a>
         </ul>
         <div className="icons">
           <a href="https://www.instagram.com/rescuedogmomspod/" rel="noreferrer" target="_blank"><img src={Instagram} alt="Spotify logo" /></a>

@@ -4,7 +4,8 @@
   flex-direction: column;
   align-items: center;
   background: #ffcfcf;
-  height: 100%;
+  height: 100vw;
+  width: 100vw;
 }
 
 nav {
@@ -24,7 +25,8 @@ nav {
 nav a,
 nav a:visited {
   color: black;
-  
+
+
 }
 
 nav a:hover {
@@ -32,22 +34,27 @@ nav a:hover {
 }
 
 .nav-links {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   list-style: none;
-  margin: 1rem;
+  margin: 0;
   padding: 0;
+
 }
 
 .nav-links li {
-  margin: 1rem 3rem;
-  font-size: 3rem;
+  margin: 0;
+  padding: 1rem;
+  font-size: 2rem;
 }
 
 nav img {
-  max-height: 25vh;
+  max-height: 40vh;
+  max-width: 100%;
   margin: 1rem;
 }
 
@@ -55,7 +62,7 @@ nav img {
   background: #ffcfcf;
   display: flex;
   flex-direction: column;
-  width: 95vw;
+  width: 95%;
   max-width: 1000px;
 }
 
@@ -123,12 +130,12 @@ nav img {
 }
 
 .icons {
-  
+ flex-wrap: nowrap
 }
 
 .icons img {
-  height: 2.5rem;
-  margin: 2rem;
-  
+  height: 2rem;
+  margin: 1.5rem;
+
 }
 
