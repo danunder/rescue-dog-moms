@@ -19,7 +19,7 @@ function Nav() {
           <Link to="/about">
             <li>About</li>
           </Link>
-          <a href="https://www.shophotdiggity.com/shop" target='blank'>
+          <a href="https://www.shophotdiggity.com/shop/p/foster-fail-t-shirt" target='blank'>
             <li>Shop</li>
           </a>
         </ul>
